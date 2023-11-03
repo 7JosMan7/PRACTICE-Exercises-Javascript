@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #6</title>
+</head>
+<body>
+    <h1>Exercise #6</h1>
+    <p>
+        Write a function that performs the bubble algorithm.<br>
+        Input [3, 6, 12, 5, 100, 1]<br>
+        Output [1, 3, 5, 6, 12, 100]<br>
+        <br>
+        const input = [3, 6, 12, 5, 100, 1];
+        <br>
+        function bubbleSort(arr) {<br>
+            let len = arr.length;<br>
+            let swapped;<br>
+            do {<br>
+                swapped = false;<br>
+                for (let i = 0; i < len - 1; i++) {<br>
+                    if (arr[i] > arr[i + 1]) {<br>
+                        let temp = arr[i];<br>
+                        arr[i] = arr[i + 1];<br>
+                        arr[i + 1] = temp;<br>
+                        swapped = true;<br>
+                    }<br>
+                }<br>
+            } while (swapped);<br>
+            return arr;<br>
+        }<br>
+        <br>
+        console.log(bubbleSort(input));
+    </p>
+    <script src="cs06.js"></script>
+</body>
+</html>
