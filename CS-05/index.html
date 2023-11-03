@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #5</title>
+</head>
+<body>
+    <h1>Exercise #5</h1>
+    <p>
+        For each of the exercises below, assume you are starting with the following people array.<br>
+        let people = ["Maria", "Dani", "Luis", "Juan", "Camila"];<br>
+        Write a command that prints out all of the people in the list.<br>
+        Write the command to remove "Dani" from the array.<br>
+        Write the command to remove "Juan" from the array.<br>
+        Write the command to move "Luis" to the front of the array.<br>
+        Write the command to add your name to the end of the array.<br>
+        Using a loop, iterate through this array and after console.log "Maria", exit from the loop.<br>
+        Write the command that gives the indexOf where "Maria" is located.<br>
+        At the end of the exercise, there should be 4 people in the array.<br>
+        <br>
+        let gente = ["María", "Dani", "Luis", "Juan", "Camila"];<br>
+        <br>
+        //Escriba un comando que imprima todas las personas de la lista.<br>
+        for(nombre of gente) {<br>
+            console.log(nombre);<br>
+        }<br>
+        <br>
+        //Escriba el comando para eliminar "Dani" del array.<br>
+        if(gente.includes('Dani')) {<br>
+            gente.splice(gente.indexOf('Dani'), 1);<br>
+            console.log(gente);<br>
+        }<br>
+        <br>
+        //Escribe el comando para eliminar "Juan" del array.<br>
+        if(gente.includes('Juan')) {<br>
+            gente.splice(gente.indexOf('Juan'), 1);<br>
+            console.log(gente);<br>
+        }<br>
+        <br>
+        //Escribe el comando para mover a "Luis" al frente de la matriz.<br>
+        if(gente.includes('Luis')) {<br>
+            gente.splice(gente.indexOf('Luis'), 1);<br>
+            gente.unshift('Luis');<br>
+            console.log(gente);<br>
+        }<br>
+        <br>
+        //Escriba el comando para agregar su nombre al final del array.<br>
+        gente.push('Manuel');<br>
+        console.log(gente);<br>
+        <br>
+        //Usando un bucle, itere a través de este array y después de console.log "Maria", salga del bucle.<br>
+        for(nombre of gente) {<br>
+            if(nombre === 'María') {<br>
+                console.log(nombre);<br>
+                break<br>
+            }else{<br>
+                console.log(nombre);<br>
+            }<br>
+        }<br>
+
+        //Escribe el comando que da el indexOf donde se encuentra "Maria".<br>
+        console.log(gente.indexOf('María'));
+    </p>
+    <script src="cs05.js"></script>
+</body>
+</html>
