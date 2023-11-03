@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #3</title>
+</head>
+<body>
+    <h1>Exercise #3</h1>
+    <p>
+        Write a program to compute the sum and product (multiplication) of an array of numbers. Print out the sum and the product.<br>
+        Example: Given an array [1, 2, 3, 4] The sum is 10. The product is 24.<br>
+        <br>
+        let arr3 = [1,2,3,4];
+        <br>
+        function producto(arr) {<br>
+        let suma = arr.reduce((resultado, elemento) => { return resultado + elemento });<br>
+        let producto = arr.reduce((resultado, elemento) => { return resultado * elemento });<br>
+        return `El resultado de la suma es: ${suma} y este es el producto: ${producto}`;<br>
+        }<br>
+        <br>
+        console.log(producto(arr3));
+    </p>
+    <script src="cs03.js"></script>
+</body>
+</html>
